@@ -135,20 +135,7 @@ function App() {
     },
   ]
 
-  const icons = [
-    {
-      ImgUrl:"./img/Vk.svg"
-    },
-    {
-      ImgUrl:"./img/You.svg"
-    },
-    {
-      ImgUrl:"./img/Tg.svg"
-    },
-    {
-      ImgUrl:"./img/Chat.svg"
-    },
-  ]
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -221,11 +208,7 @@ function App() {
               <li className="flex gap-8"><img src="./img/Vector1.svg"></img>+7 (911) 123-45-67</li>
               <li className="flex gap-8"><img src="./img/Vector2.svg"></img>lavita_school@gmail.com</li>
             </ul>
-              {
-                icons.map((obj) => {
-                  <Icons ImgUrl = {obj.ImgUrl}/>
-                })
-              }
+               <Icons/>  
           </div>
           <div className="w-[210px] flex flex-col gap-[25px]">
             <h2 className="font-bold uppercase">О нас</h2>
